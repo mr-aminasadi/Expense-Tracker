@@ -1,9 +1,15 @@
 import React from "react";
+import ExpenseApp from "./component/ExpenseApp";
 
 
 const App = () => {
   return (
-   <h1 className="text-blue-400 text-3xl">hello</h1>
+   <div className="app">
+    <header>
+      <h2>Expense Tracker</h2>
+    </header>
+    <ExpenseApp/>
+   </div>
   );
 };
 
