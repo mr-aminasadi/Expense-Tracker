@@ -15,7 +15,7 @@ const FormAction = ({ addTransaction, setIsShow }) => {
   const submitHandler = (e) => {
     e.preventDefault();
     addTransaction(formValues);
-    setIsShow(false)
+    setIsShow(false);
   };
 
   return (

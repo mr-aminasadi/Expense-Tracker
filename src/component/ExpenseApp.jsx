@@ -20,8 +20,8 @@ const ExpenseApp = () => {
         ? (exp = exp + parseFloat(t.amount))
         : (inc = inc + parseFloat(t.amount));
     });
-    setExpense(exp)
-    setIncome(inc)
+    setExpense(exp);
+    setIncome(inc);
   }, [transaction]);
 
   return (

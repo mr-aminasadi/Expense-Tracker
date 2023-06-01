@@ -12,13 +12,17 @@ const OverView = ({ income, expense, addTransaction }) => {
         <p className="font-extrabold text-xl">Balance : {income - expense}</p>
         <button
           onClick={() => setIsShow((prevState) => !prevState)}
-          className={`btn flex items-center font-medium text-sm ${isShow ? "text-red-700 bg-red-100":""}`}
+          className={`btn flex items-center font-medium text-sm ${
+            isShow ? "text-red-700 bg-red-100" : ""
+          }`}
         >
           {isShow ? "Cancel" : "add"}
           {isShow ? <BiChevronUp /> : <BiChevronDown />}
         </button>
       </div>
-      {isShow && <FormAction addTransaction={addTransaction} setIsShow={setIsShow}/>}
+      {isShow && (
+        <FormAction addTransaction={addTransaction} setIsShow={setIsShow} />
+      )}
       <div className="flex justify-between items-center">
         <div className="expenseBox">
           Expense :<span className="font-bold text-red-700">{expense} $</span>
